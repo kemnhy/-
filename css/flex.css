@@ -1,0 +1,66 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul,
+li {
+  list-style: none;
+}
+h1{
+  font-size: 5vw;
+}
+h2{
+  /* font-size: 3vw; */
+  font-size: clamp(14px, 5vw , 32px);
+}
+.container {
+  width: 100%;
+  background-color: beige;
+}
+.card {
+  width: 100%;
+  max-width: 700px;
+  min-width: 270px;
+  background-color: paleturquoise;
+  margin: auto;
+}
+.card li {
+  display: flex;
+  gap: 2%;
+  align-items: center;
+  padding: 2%;
+}
+.img-box {
+  width: 60%;
+}
+.card li img {
+  display: block;
+  width: 100%;
+}
+.card-txt {
+  width: 40%;
+  background-color: rgb(131, 250, 131);
+}
+@media (max-width: 768px) {
+  .card li {
+    flex-direction: column;
+  }
+  .img-box {
+    width: 100%;
+  }
+  .card-txt {
+  width: 100%;
+  padding: 2%;
+}
+}
+
+@media (max-width: 390px) {
+  .card-txt h3 {
+    font-size: 16px;
+  }
+  .card-txt p {
+    font-size: 14px;
+  }
+}

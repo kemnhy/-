@@ -1,0 +1,39 @@
+@charset "utf-8";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul li{
+    list-style: none;
+}
+.container{
+    width: 100%;
+    background-color: aqua;
+}
+.card{
+    width: 100%;
+    max-width: 800px;
+    min-width: 300px;
+    background-color: aquamarine;
+    
+}
+.card li {
+  display: flex;
+  gap: 2%;
+  align-items: center;
+  padding: 2%;
+}
+.img-box {
+  width: 60%;
+}
+.card li img {
+  display: block;
+  width: 100%;
+}
+.img-box{
+    width: 60%;
+}
+.card-txt{
+    
+}

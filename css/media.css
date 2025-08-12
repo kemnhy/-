@@ -1,0 +1,35 @@
+@charset "utf-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("../images/bg0.jpg") no-repeat;
+  background-size: cover;
+}
+h2,h3{
+    display: none;
+}
+
+@media all and (max-width: 768px) {
+  body {
+    background: url("../images/bg1.jpg") no-repeat;
+  }
+  h2,h3{
+    display: block;
+  }
+}
+@media all and (max-width: 500px) {
+  body {
+    background: url("../images/bg2.jpg") no-repeat;
+  }
+}
+@media all and (max-width: 200px) {
+  body {
+    background: url("../images/bg3.jpg") no-repeat;
+  }
+  h2,h3{
+    display: block;
+  }
+}
